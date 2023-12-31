@@ -10,8 +10,6 @@ source:
   sha256: bd4f6d23de2f9501bedb8a32437b1a87d8d9be9cb6a3b8a676e33aa9d2d439a7
 
 build:
-  entry_points:
-    - tests = test_utils.load_tests:launch
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 1
@@ -33,7 +31,6 @@ test:
     - django_socio_grpc
   commands:
     - pip check
-    - tests --help
   requires:
     - pip
 
