@@ -1,5 +1,5 @@
 {% set name = "django-socio-grpc" %}
-{% set version = "0.22.7" %}
+{% set version = "0.22.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django_socio_grpc-{{ version }}.tar.gz
-  sha256: 9ed7464ef4a91143f84abae832eb95816c35b24b8becc80712d9ecb222ea6e35
+  sha256: 033e47515bbc3b4a6ee723d96d00acd76603561d32901b439be38476d0f2eb17
 
 build:
   noarch: python
