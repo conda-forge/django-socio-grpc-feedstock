@@ -1,5 +1,5 @@
 {% set name = "django-socio-grpc" %}
-{% set version = "0.22.9" %}
+{% set version = "0.23.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django_socio_grpc-{{ version }}.tar.gz
-  sha256: e049ab0c74062f7bdf12df43a650bf640678af3393e41b0316f7c99253f3bc2f
+  sha256: c5bafeddefdce733f41fe8b297f2529281644736ea32d814c4d1ada96491328e
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.8,<4.0
-    - django >=2.2
+    - django >=4.2
     - djangorestframework
     - grpcio-tools >=1.50.0,<2.0.0
     - lark-parser >=0.12.0,<0.13.0
