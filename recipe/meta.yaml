@@ -18,7 +18,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - poetry-core >=1.0.0,<2.0.0
+    - poetry-core >=2.0.1,<3.0.0
     - pip
   run:
     - lark >=1.0.0,<2.0.0
